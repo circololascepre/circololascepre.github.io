@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circolo La Scepre ASD</title>
+<meta name="description" content="Circolo La Scepre A.S.D. - A.P.S. (Pisa): attività sportive, eventi, tornei e rassegne 2024-2025 con volantini e risultati, trasparenza e contatti.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Sito multi-sezione: barra sticky (logo+menu) sopra, sezioni mostrate una per volta; verde del marchio */
+:root{
+  --bg:#f5f7f3;--surface:#ffffff;--fg:#1b2620;--muted:#586a60;--line:#e3eae2;
+  --accent:#1c8a3b;--accent-ink:#13692d;--accent-soft:#e8f4ec;--bar:#13351f;--bar-fg:#eef6ef;
+  --gold:#bd9530;--silver:#8c97a0;--bronze:#b06c38;
+  --display:'Oswald',Impact,sans-serif;--body:'Source Sans 3',system-ui,Segoe UI,sans-serif;
+  --maxw:1060px;--radius:14px;--shadow:0 2px 10px rgba(20,40,25,.06),0 1px 2px rgba(20,40,25,.08);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10140f;--surface:#1a201b;--fg:#e8efe8;--muted:#9bae9f;--line:#293029;
+  --accent:#47c56a;--accent-ink:#8ee3a2;--accent-soft:#17251b;--bar:#0e1f14;--bar-fg:#eef6ef;
+  --gold:#d9b24a;--silver:#aab4bc;--bronze:#cf8a53;color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#10140f;--surface:#1a201b;--fg:#e8efe8;--muted:#9bae9f;--line:#293029;
+  --accent:#47c56a;--accent-ink:#8ee3a2;--accent-soft:#17251b;--bar:#0e1f14;--bar-fg:#eef6ef;
+  --gold:#d9b24a;--silver:#aab4bc;--bronze:#cf8a53;color-scheme:dark;}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.55;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bar);z-index:30}
+a{color:var(--accent-ink)}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bar);color:var(--bar-fg)}
+.topbar .inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.brand img{width:38px;height:auto}
+.brand b{font-family:var(--display);font-weight:600;letter-spacing:.04em;font-size:1.02rem;line-height:1}
+.brand span{display:block;font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;opacity:.8}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main button{font-family:var(--display);font-weight:500;letter-spacing:.03em;font-size:.92rem;cursor:pointer;
+  background:transparent;border:0;color:var(--bar-fg);padding:7px 11px;border-radius:8px;opacity:.82}
+nav.main button:hover{opacity:1;background:rgba(255,255,255,.08)}
+nav.main button[aria-current="true"]{opacity:1;background:var(--accent);color:#fff}
+.wrap{max-width:var(--maxw);margin:0 auto;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+section.sec{padding-block:30px 46px}
+.sec-hero{text-align:center;padding-block:22px 6px}
+.sec-hero img.logo{width:96px;height:auto}
+.eyebrow{font-family:var(--display);font-weight:600;letter-spacing:.09em;text-transform:uppercase;font-size:.72rem;color:var(--accent-ink)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,5.4vw,3rem);line-height:1.04;margin:.2rem 0 .3rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,3.6vw,1.9rem);letter-spacing:.01em;margin:0 0 .5rem;text-wrap:balance}
+.lead{color:var(--muted);max-width:60ch;margin:.2rem auto 0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:22px 24px;margin-top:18px}
+.panel p{max-width:68ch}
+.block-title{display:flex;align-items:baseline;gap:12px;margin:34px 0 2px}
+.block-title h2{margin:0}
+.inilist{list-style:none;padding:0;margin:.4rem 0 0;display:grid;gap:10px}
+.inilist li{padding-left:16px;border-left:3px solid var(--accent);}
+.teamgrid,.doclist{list-style:none;padding:0;margin:.4rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.teamgrid li,.doclist li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow)}
+.teamgrid li b{font-family:var(--display);font-weight:600}
+.teamgrid li small,.doclist li small{display:block;color:var(--muted)}
+.doclist li::before{content:"\1F4C4  ";}
+.council{list-style:none;padding:0;margin:.4rem 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.council li{background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.92rem}
+/* eventi */
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:16px 0 4px}
+.tabs button{font-family:var(--display);font-weight:600;letter-spacing:.04em;font-size:1rem;cursor:pointer;
+  padding:8px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg)}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.yearnote{text-align:center;color:var(--muted);font-size:.9rem;margin:4px 0 18px}
+.cards{display:grid;gap:20px}
+.card{display:grid;grid-template-columns:290px 1fr;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.flyer{position:relative;display:block;background:var(--accent-soft);border-right:1px solid var(--line)}
+.flyer img{display:block;width:100%;height:100%;object-fit:cover;max-width:100%}
+.flyer .zoom{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.62);color:#fff;font-size:.72rem;
+  padding:4px 9px;border-radius:999px;opacity:0;transition:opacity .15s}
+.flyer:hover .zoom,.flyer:focus-visible .zoom{opacity:1}
+.cinfo{padding:18px 20px 20px;min-width:0}
+.cat{font-family:var(--display);font-weight:600;letter-spacing:.09em;text-transform:uppercase;font-size:.68rem;color:var(--accent-ink)}
+.cinfo h3{font-family:var(--display);font-weight:700;font-size:1.42rem;line-height:1.08;margin:.15rem 0 .2rem;text-wrap:balance}
+.meta{color:var(--muted);font-size:.88rem;margin:0 0 .7rem}
+.res-h{font-family:var(--display);font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.72rem;color:var(--muted);margin:.8rem 0 .35rem}
+.podium{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.podium li{display:flex;align-items:baseline;gap:10px}
+.podium .pos{font-family:var(--display);font-weight:700;font-size:.95rem;width:2.1em;flex:none}
+.rk1 .pos{color:var(--gold)}.rk2 .pos{color:var(--silver)}.rk3 .pos{color:var(--bronze)}
+.rk1 .who{font-weight:600}.podium .who{min-width:0}
+.phases{display:flex;flex-direction:column;gap:4px}
+.phase{display:grid;grid-template-columns:5.2em 1fr;gap:10px;font-size:.9rem}
+.ph-k{color:var(--accent-ink);font-weight:600}.ph-v{min-width:0}
+.phase:last-child .ph-v{font-weight:600}
+.topscorer{margin:.5rem 0 0;font-size:.9rem}
+.recap{margin:.2rem 0 .6rem}
+.badge-info{display:inline-block;background:var(--accent-soft);color:var(--accent-ink);font-size:.82rem;padding:4px 11px;border-radius:999px;margin:0}
+.contact{font-size:1.05rem}
+.contact .big{font-family:var(--display);font-weight:600;font-size:1.3rem}
+footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.84rem;padding:22px 0 40px}
+footer strong{color:var(--fg)}
+.lb{position:fixed;inset:0;background:rgba(8,14,10,.9);display:flex;align-items:center;justify-content:center;
+  padding:max(20px,env(safe-area-inset-top,0px)) 20px;z-index:50;cursor:zoom-out}
+.lb img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+@media (max-width:640px){
+  .card{grid-template-columns:1fr}
+  .flyer{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:1/1.414}
+  .flyer .zoom{opacity:1}
+  .brand span{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="inner">
+    <div class="brand"><img src="img/logo.png" alt="Logo La Scepre"><div><b>La Scepre</b><span>A.S.D. – A.P.S.</span></div></div>
+    <nav class="main" aria-label="Menu principale"><button class="" data-sec="home">Home</button><button class="" data-sec="storia">Storia</button><button class="" data-sec="eventi">Attività ed Eventi</button><button class="" data-sec="trasparenza">Trasparenza</button><button class="" data-sec="contatti">Contatti</button></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="home" data-sec="home">
+    <div class="sec-hero">
+      <img class="logo" src="img/logo.png" alt="Logo Circolo La Scepre">
+      <p class="eyebrow">Circolo La Scepre A.S.D. – A.P.S.</p>
+      <h1>Associazione Sportiva Dilettantistica<br>e di Promozione Sociale</h1>
+      <p class="lead">Dal 2013 a Pisa: sport, tornei, rassegne culturali e vita di comunità.</p>
+    </div>
+    <div class="block-title"><h2>La nostra mission</h2></div>
+    <div class="panel"><p>La missione del nostro circolo è la promozione di attività sportive e di promozione sociale per i nostri tesserati. Il nostro obiettivo principale è fornire un ambiente accogliente e inclusivo, in cui i soci possano sviluppare le proprie capacità sportive e il loro benessere generale. Poniamo grande enfasi sull&#x27;importanza dei valori dell&#x27;associazionismo, come la solidarietà, la lealtà, il rispetto reciproco e il fair play. Attraverso la pratica sportiva vogliamo promuovere uno stile di vita attivo, creare legami sociali duraturi e favorire l&#x27;integrazione di tutte le persone che condividono la passione per lo sport.</p></div>
+    <div class="block-title"><h2>Iniziative e risultati</h2></div>
+    <p class="lead" style="margin-left:0">Le nostre principali attività sportive e sociali:</p>
+    <ul class="inilist"><li><strong>Calcio a 5 (Futsal).</strong> La nostra squadra di calcio a 5 offre un&#x27;opportunità di gioco appassionante per i nostri soci.</li><li><strong>Calcio a 7.</strong> Contiamo su due squadre di calcio a 7 che partecipano a tornei e campionati, promuovendo il sano spirito di squadra.</li><li><strong>Calcio a 11.</strong> La nostra squadra di calcio a 11 compete in campionati e tornei, in un ambiente competitivo.</li><li><strong>Calisthenics.</strong> Nel nostro giardino un impianto dedicato al calisthenics, per migliorare forza e resistenza all&#x27;aperto.</li><li><strong>Promozione Sociale.</strong> Nei nostri locali promuoviamo socializzazione e integrazione: serate culturali, incontri su temi sociali e molto altro.</li></ul>
+  </section>
+
+  <section class="sec" id="storia" data-sec="storia" hidden>
+    <div class="sec-hero"><p class="eyebrow">Chi siamo</p><h1>La nostra storia</h1></div>
+    <div class="panel"><p>La storia del Circolo La Scepre Associazione Sportiva Dilettantistica APS ha inizio nel luglio del 2013, quando un gruppo di giovani si è riunito con l&#x27;obiettivo di creare questa associazione.</p><p>Nel corso degli ultimi dieci anni abbiamo assistito a un&#x27;evoluzione significativa, con cambiamenti profondi dei consiglieri e un notevole aumento del numero dei nostri soci. Abbiamo anche avuto la fortuna di coinvolgere le nuove generazioni, che hanno portato freschezza e vitalità alla nostra comunità.</p><p>Durante questo periodo sia il numero dei soci che la diversità delle attività offerte sono cresciuti in modo significativo. Il nostro impegno principale è coinvolgere attivamente le comunità nella nostra zona, attraverso una vasta gamma di attività adatte a tutte le età e a tutti gli interessi.</p><p>Il nostro obiettivo rimane quello di promuovere un senso di appartenenza, condivisione e inclusione nella nostra comunità locale. Continuiamo a evolverci costantemente, ascoltando le esigenze dei nostri soci. Siamo orgogliosi della nostra storia, ma guardiamo sempre avanti.</p></div>
+  </section>
+
+  <section class="sec" id="eventi" data-sec="eventi" hidden>
+    <div class="sec-hero"><p class="eyebrow">Attività ed Eventi</p><h1>Eventi, tornei e rassegne</h1>
+      <p class="lead">Volantini, classifiche e fasi finali delle manifestazioni del circolo. Le quote di partecipazione sono sempre libere (contributo volontario).</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Stagione">
+      <button role="tab" id="y2025" data-year="2025" aria-selected="true">Stagione 2025</button>
+      <button role="tab" id="y2024" data-year="2024" aria-selected="false">Stagione 2024</button>
+    </div>
+    <div class="yearnote">Clicca un volantino per ingrandirlo.</div>
+    <div class="cards yearbox" id="box2025"><article class="card">
+  <a class="flyer" href="img/2025/cineforum.png" data-full="img/2025/cineforum.png" aria-label="Volantino: Rassegna Cineforum 2025 – Serate Cinema">
+    <img src="img/2025/cineforum.png" alt="Volantino Rassegna Cineforum 2025 – Serate Cinema" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Cineforum 2025 – Serate Cinema</h3>
+    <p class="meta">Venerdì 17 gennaio 2025 · ore 21:15 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 46 serate, oltre 1380 presenze complessive e una media di oltre 60 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/monopoli.png" data-full="img/2025/monopoli.png" aria-label="Volantino: Torneo di Monopoli">
+    <img src="img/2025/monopoli.png" alt="Volantino Torneo di Monopoli" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Monopoli</h3>
+    <p class="meta">Sabato 8 febbraio 2025 · dalle ore 15:30 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Istratii Danu</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Succurro Mattia</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Maliqi Xhezmir</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Istratii Danu b. Succurro Mattia</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/burraco1.png" data-full="img/2025/burraco1.png" aria-label="Volantino: Torneo di Burraco · 1ª edizione">
+    <img src="img/2025/burraco1.png" alt="Volantino Torneo di Burraco · 1ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Burraco · 1ª edizione</h3>
+    <p class="meta">Sabato 22 febbraio 2025 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Degl&#x27; Innocenti Dario &amp; Malasoma Nicola</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Puliri Marcello &amp; Dusatti Ivo</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Fedi Marco &amp; Nardi Roberto · Conti Michael &amp; Landi Federico</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Degl&#x27; Innocenti Dario &amp; Malasoma Nicola b. Puliri Marcello &amp; Dusatti Ivo</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/briscola1.png" data-full="img/2025/briscola1.png" aria-label="Volantino: Torneo di Briscola · 1ª edizione">
+    <img src="img/2025/briscola1.png" alt="Volantino Torneo di Briscola · 1ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Briscola · 1ª edizione</h3>
+    <p class="meta">Sabato 15 marzo 2025 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Bislim Derijan &amp; Poletti Elisa</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Maliqi Xhezmir &amp; Faraoni Matteo</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Sujela Bislim &amp; Sisi Ivano · Demitrov Mahmut &amp; Landi Nicola</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Bislim Derijan &amp; Poletti Elisa b. Maliqi Xhezmir &amp; Faraoni Matteo</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/musicale.png" data-full="img/2025/musicale.png" aria-label="Volantino: Rassegna Musicale – Serate Musica dal Vivo">
+    <img src="img/2025/musicale.png" alt="Volantino Rassegna Musicale – Serate Musica dal Vivo" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Musicale – Serate Musica dal Vivo</h3>
+    <p class="meta">Venerdì 16 maggio 2025 · ore 21:30 · Giardino / Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 18 serate, oltre 405 presenze complessive e una media di oltre 45 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/pingpong.png" data-full="img/2025/pingpong.png" aria-label="Volantino: Torneo di Ping Pong">
+    <img src="img/2025/pingpong.png" alt="Volantino Torneo di Ping Pong" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Ping Pong</h3>
+    <p class="meta">Sabato 17 maggio 2025 · dalle ore 16:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Sbrana Lido</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Trulli Valentina</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Bellucci Stefano</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Sbrana Lido b. Trulli Valentina</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/calcio5.png" data-full="img/2025/calcio5.png" aria-label="Volantino: Torneo di Calcio a 5">
+    <img src="img/2025/calcio5.png" alt="Volantino Torneo di Calcio a 5" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">MANIFESTAZIONE SPORTIVA</span><h3>Torneo di Calcio a 5</h3>
+    <p class="meta">Sabato 24 maggio 2025 · dalle ore 15:00 · Campo sportivo di Oratoio – Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Dinamo Fonda</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Oratoio Boys</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Via Fonda FC</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Quarti</span><span class="ph-v">Dinamo Fonda 6-3 Sporting Calatafimi; Scepre United 5-1 I Leoni di Pisa; Oratoio Boys 3-2 Real Garzella; Atletico Tranvia 3-5 Via Fonda FC</span></div><div class="phase"><span class="ph-k">Semifinali</span><span class="ph-v">Dinamo Fonda 3-0 Scepre United; Oratoio Boys 5-4 Via Fonda FC</span></div><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Dinamo Fonda 4-3 Oratoio Boys</span></div></div><p class="topscorer">Capocannoniere: <strong>Alonzi Francesco</strong> (14 gol)</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/biliardino.png" data-full="img/2025/biliardino.png" aria-label="Volantino: Torneo di Biliardino">
+    <img src="img/2025/biliardino.png" alt="Volantino Torneo di Biliardino" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Biliardino</h3>
+    <p class="meta">Sabato 21 giugno 2025 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Echegdali Mohammed &amp; Giannelli Sandro</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Orsini Massimo &amp; Virgili Vittorio</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Ghimenti Giulio &amp; Farnesi Alice · Venturi Alessio &amp; Mekal Mazgorzata</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Echegdali Mohammed &amp; Giannelli Sandro b. Orsini Massimo &amp; Virgili Vittorio</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/serietv.png" data-full="img/2025/serietv.png" aria-label="Volantino: Rassegna Serie TV &amp; Fiction">
+    <img src="img/2025/serietv.png" alt="Volantino Rassegna Serie TV &amp; Fiction" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Serie TV &amp; Fiction</h3>
+    <p class="meta">Venerdì 19 settembre 2025 · ore 21:15 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 32 serate, oltre 800 presenze complessive e una media di oltre 50 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/burraco2.png" data-full="img/2025/burraco2.png" aria-label="Volantino: Torneo di Burraco · 2ª edizione">
+    <img src="img/2025/burraco2.png" alt="Volantino Torneo di Burraco · 2ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Burraco · 2ª edizione</h3>
+    <p class="meta">Sabato 18 ottobre 2025 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Giusti Giovanni &amp; Di Nasso Franca</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Gratta Loretta &amp; Toccafondo Nicola</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Diliberto Giovanni &amp; Maliqi Xhezmir · Serra Federica &amp; Baronti Milco</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Giusti Giovanni &amp; Di Nasso Franca b. Gratta Loretta &amp; Toccafondo Nicola</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/briscola2.png" data-full="img/2025/briscola2.png" aria-label="Volantino: Torneo di Briscola · 2ª edizione">
+    <img src="img/2025/briscola2.png" alt="Volantino Torneo di Briscola · 2ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Briscola · 2ª edizione</h3>
+    <p class="meta">Sabato 22 novembre 2025 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Amatori Giovanni &amp; Cobino Marcello</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Diliberto Giovanni &amp; Giordano Alice</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Frangioni Leonardo &amp; Lischi Simone · Malquori Vittorio &amp; Casarosa Giada</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Amatori Giovanni &amp; Cobino Marcello b. Diliberto Giovanni &amp; Giordano Alice</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2025/risiko.png" data-full="img/2025/risiko.png" aria-label="Volantino: Torneo di Risiko">
+    <img src="img/2025/risiko.png" alt="Volantino Torneo di Risiko" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Risiko</h3>
+    <p class="meta">Sabato 13 dicembre 2025 · dalle ore 15:30 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Gjana Jeton</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Ginghiali Matteo</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Bassoni Luzio</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Gjana Jeton b. Ginghiali Matteo</span></div></div></div>
+  </div>
+</article></div>
+    <div class="cards yearbox" id="box2024" hidden><article class="card">
+  <a class="flyer" href="img/2024/cineforum.png" data-full="img/2024/cineforum.png" aria-label="Volantino: Rassegna Cineforum 2025 – Serate Cinema">
+    <img src="img/2024/cineforum.png" alt="Volantino Rassegna Cineforum 2025 – Serate Cinema" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Cineforum 2025 – Serate Cinema</h3>
+    <p class="meta">Mercoledì 17 gennaio 2024 · ore 21:15 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 46 serate, oltre 1380 presenze complessive e una media di oltre 60 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/monopoli.png" data-full="img/2024/monopoli.png" aria-label="Volantino: Torneo di Monopoli">
+    <img src="img/2024/monopoli.png" alt="Volantino Torneo di Monopoli" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Monopoli</h3>
+    <p class="meta">Giovedì 8 febbraio 2024 · dalle ore 15:30 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Succurro Mattia</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">D&#x27;Arrigo Jonathan</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Casarosa Giada</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Succurro Mattia b. D&#x27;Arrigo Jonathan</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/burraco1.png" data-full="img/2024/burraco1.png" aria-label="Volantino: Torneo di Burraco · 1ª edizione">
+    <img src="img/2024/burraco1.png" alt="Volantino Torneo di Burraco · 1ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Burraco · 1ª edizione</h3>
+    <p class="meta">Giovedì 22 febbraio 2024 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Nardi Roberto &amp; Caroccia Valentina</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Naldini Fabio &amp; Malquori Vittorio</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Puliri Marcello &amp; Landi Federico · Tararà Antonio &amp; Farid Nadia</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Nardi Roberto &amp; Caroccia Valentina b. Naldini Fabio &amp; Malquori Vittorio</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/briscola1.png" data-full="img/2024/briscola1.png" aria-label="Volantino: Torneo di Briscola · 1ª edizione">
+    <img src="img/2024/briscola1.png" alt="Volantino Torneo di Briscola · 1ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Briscola · 1ª edizione</h3>
+    <p class="meta">Venerdì 15 marzo 2024 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Paffi Alessandro &amp; Demitrov Mahmut</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Faraoni Matteo &amp; Sujela Bislim</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Landi Nicola &amp; Petrini Federico · Ginghiali Matteo &amp; Dusatti Ivo</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Paffi Alessandro &amp; Demitrov Mahmut b. Faraoni Matteo &amp; Sujela Bislim</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/musicale.png" data-full="img/2024/musicale.png" aria-label="Volantino: Rassegna Musicale – Serate Musica dal Vivo">
+    <img src="img/2024/musicale.png" alt="Volantino Rassegna Musicale – Serate Musica dal Vivo" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Musicale – Serate Musica dal Vivo</h3>
+    <p class="meta">Giovedì 16 maggio 2024 · ore 21:30 · Giardino / Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 18 serate, oltre 405 presenze complessive e una media di oltre 45 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/pingpong.png" data-full="img/2024/pingpong.png" aria-label="Volantino: Torneo di Ping Pong">
+    <img src="img/2024/pingpong.png" alt="Volantino Torneo di Ping Pong" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Ping Pong</h3>
+    <p class="meta">Venerdì 17 maggio 2024 · dalle ore 16:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Pratali Benedetta</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Mannocci Elisa</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Giorgi Gabriele</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Pratali Benedetta b. Mannocci Elisa</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/calcio5.png" data-full="img/2024/calcio5.png" aria-label="Volantino: Torneo di Calcio a 5">
+    <img src="img/2024/calcio5.png" alt="Volantino Torneo di Calcio a 5" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">MANIFESTAZIONE SPORTIVA</span><h3>Torneo di Calcio a 5</h3>
+    <p class="meta">Venerdì 24 maggio 2024 · dalle ore 15:00 · Campo sportivo di Oratoio – Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Sporting Calatafimi</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Atletico Tranvia</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Oratoio Boys</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Quarti</span><span class="ph-v">Sporting Calatafimi 2-1 I Leoni di Pisa; Oratoio Boys 6-4 Via Fonda FC; Atletico Tranvia 7-1 Dinamo Fonda; Real Garzella 6-0 Scepre United</span></div><div class="phase"><span class="ph-k">Semifinali</span><span class="ph-v">Sporting Calatafimi 4-0 Oratoio Boys; Atletico Tranvia 5-3 Real Garzella</span></div><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Sporting Calatafimi 6-2 Atletico Tranvia</span></div></div><p class="topscorer">Capocannoniere: <strong>Cateni Riccardo</strong> (11 gol)</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/biliardino.png" data-full="img/2024/biliardino.png" aria-label="Volantino: Torneo di Biliardino">
+    <img src="img/2024/biliardino.png" alt="Volantino Torneo di Biliardino" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Biliardino</h3>
+    <p class="meta">Venerdì 21 giugno 2024 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Nardi Mirko &amp; Virgili Vittorio</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Mekal Mazgorzata &amp; Venturi Alessio</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Giannelli Sandro &amp; Faraoni Matteo · Nencini Luciano &amp; Marchetti Siria</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Nardi Mirko &amp; Virgili Vittorio b. Mekal Mazgorzata &amp; Venturi Alessio</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/serietv.png" data-full="img/2024/serietv.png" aria-label="Volantino: Rassegna Serie TV &amp; Fiction">
+    <img src="img/2024/serietv.png" alt="Volantino Rassegna Serie TV &amp; Fiction" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">RASSEGNA</span><h3>Rassegna Serie TV &amp; Fiction</h3>
+    <p class="meta">Giovedì 19 settembre 2024 · ore 21:15 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><p class="recap">Rassegna conclusa con successo: 32 serate, oltre 800 presenze complessive e una media di oltre 50 soci a serata.</p><p class="badge-info">Rassegna culturale · quota di partecipazione libera</p></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/burraco2.png" data-full="img/2024/burraco2.png" aria-label="Volantino: Torneo di Burraco · 2ª edizione">
+    <img src="img/2024/burraco2.png" alt="Volantino Torneo di Burraco · 2ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Burraco · 2ª edizione</h3>
+    <p class="meta">Venerdì 18 ottobre 2024 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Serra Federica &amp; Di Nasso Franca</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Casarosa Diego &amp; Giusti Giovanni</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Baronti Milco &amp; Stanfa Annamaria · Vanni Roberto &amp; Diliberto Giovanni</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Serra Federica &amp; Di Nasso Franca b. Casarosa Diego &amp; Giusti Giovanni</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/briscola2.png" data-full="img/2024/briscola2.png" aria-label="Volantino: Torneo di Briscola · 2ª edizione">
+    <img src="img/2024/briscola2.png" alt="Volantino Torneo di Briscola · 2ª edizione" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Briscola · 2ª edizione</h3>
+    <p class="meta">Venerdì 22 novembre 2024 · ore 21:00 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Diliberto Giovanni &amp; Saviozzi Matteo</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Conti Chiara &amp; Benedetti Nicola</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Amatori Giovanni &amp; Sbrana Riccardo · Paperini Riccardo &amp; Malquori Vittorio</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Diliberto Giovanni &amp; Saviozzi Matteo b. Conti Chiara &amp; Benedetti Nicola</span></div></div></div>
+  </div>
+</article>
+<article class="card">
+  <a class="flyer" href="img/2024/risiko.png" data-full="img/2024/risiko.png" aria-label="Volantino: Torneo di Risiko">
+    <img src="img/2024/risiko.png" alt="Volantino Torneo di Risiko" loading="lazy"><span class="zoom">Ingrandisci</span>
+  </a>
+  <div class="cinfo">
+    <span class="cat">TORNEO</span><h3>Torneo di Risiko</h3>
+    <p class="meta">Venerdì 13 dicembre 2024 · dalle ore 15:30 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Della Rosa Patrizia</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Paffi Alessandro</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Bassoni Luzio</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Della Rosa Patrizia b. Paffi Alessandro</span></div></div></div>
+  </div>
+</article></div>
+    <div class="block-title"><h2>Campionati e tornei</h2></div>
+    <p class="lead" style="margin-left:0">Le squadre e i campionati di calcio del circolo:</p>
+    <ul class="teamgrid"><li><b>Calcio a 5 (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 5 Over 35 (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 5 “Scarpellini Edilizia” (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 (Girone del Lunedì)</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 (Girone del Mercoledì)</b><small>Classifica e calendario</small></li><li><b>Calcio a 11 “La Scepre”</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 “Pettori 3000”</b><small>Classifica e calendario</small></li></ul>
+  </section>
+
+  <section class="sec" id="trasparenza" data-sec="trasparenza" hidden>
+    <div class="sec-hero"><p class="eyebrow">Trasparenza Amministrativa</p><h1>Documenti e organi sociali</h1></div>
+    <div class="block-title"><h2>Documenti amministrazione</h2></div>
+    <ul class="doclist"><li>Atto costitutivo con Statuto (2013)</li><li>Statuto vigente con verbale di approvazione (2022)</li><li>Verbale consiglio direttivo (2021)</li><li>Bilancio 2021</li><li>Verbale di approvazione bilancio 2021</li><li>Bilancio 2022</li><li>Verbale di approvazione bilancio 2022</li></ul>
+    <div class="block-title"><h2>Consiglio direttivo</h2></div>
+    <ul class="council"><li>Marco Vangelisti</li><li>Adriano Cateni</li><li>Alice Vangelisti</li><li>Marco Tognoni</li><li>Erika Tararà</li><li>Nicola Fiori</li><li>Luciana Busceti</li><li>Massimiliano Savelli</li><li>Franco Cocchiarella</li></ul>
+  </section>
+
+  <section class="sec" id="contatti" data-sec="contatti" hidden>
+    <div class="sec-hero"><p class="eyebrow">Contatti</p><h1>Dove siamo</h1></div>
+    <div class="panel contact">
+      <p class="big">Circolo La Scepre A.S.D. – A.P.S.</p>
+      <p>Via Fonda 15 – 56121 Pisa (PI)<br>Affiliata A.I.C.S. · C.F. 93080340503</p>
+      <p>Per informazioni, tesseramento e prenotazioni: presso la sede sociale.</p>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Circolo La Scepre A.S.D. – A.P.S.</strong><br>
+    Via Fonda 15 – 56121 Pisa (PI) · Affiliata A.I.C.S. · C.F. 93080340503
+  </footer>
+</main>
+
+<script>
+(function(){
+  var secs=['home','storia','eventi','trasparenza','contatti'];
+  function showSec(s){
+    if(secs.indexOf(s)<0)s='home';
+    secs.forEach(function(x){document.getElementById(x).hidden=(x!==s);});
+    document.querySelectorAll('nav.main button,[data-sec]').forEach(function(b){
+      if(b.tagName==='BUTTON'&&b.getAttribute('data-sec')) b.setAttribute('aria-current', b.getAttribute('data-sec')===s?'true':'false');
+    });
+    try{if(location.hash.replace('#','')!==s)history.replaceState(null,'','#'+s);}catch(e){}
+    window.scrollTo({top:0,behavior:'instant' in window?'instant':'auto'});
+  }
+  document.querySelectorAll('nav.main button').forEach(function(b){
+    b.addEventListener('click',function(){showSec(b.getAttribute('data-sec'));});
+  });
+  showSec((location.hash||'').replace('#',''));
+  // anno eventi
+  function showYear(y){
+    document.getElementById('box2025').hidden=(y!=='2025');
+    document.getElementById('box2024').hidden=(y!=='2024');
+    document.getElementById('y2025').setAttribute('aria-selected',y==='2025'?'true':'false');
+    document.getElementById('y2024').setAttribute('aria-selected',y==='2024'?'true':'false');
+  }
+  document.getElementById('y2025').addEventListener('click',function(){showYear('2025');});
+  document.getElementById('y2024').addEventListener('click',function(){showYear('2024');});
+  // lightbox
+  document.querySelectorAll('.flyer').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var lb=document.createElement('div');lb.className='lb';
+      var im=document.createElement('img');im.src=a.getAttribute('data-full');im.alt='Volantino';
+      lb.appendChild(im);document.body.appendChild(lb);
+      lb.addEventListener('click',function(){lb.remove();});
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){var x=document.querySelector('.lb');if(x)x.remove();}});
+})();
+</script>
+</body>
+</html>
