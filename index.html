@@ -67,6 +67,14 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,3.6vw,1.9re
 .doclist li::before{content:"\1F4C4  ";}
 .council{list-style:none;padding:0;margin:.4rem 0 0;display:flex;flex-wrap:wrap;gap:8px}
 .council li{background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.92rem}
+.doclist li a{color:var(--accent-ink);text-decoration:none;font-weight:600}
+.doclist li a:hover{text-decoration:underline}
+.teamgrid li small a{color:var(--accent-ink);text-decoration:none;font-weight:600}
+.teamgrid li small a:hover{text-decoration:underline}
+.calwrap{margin-top:14px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--surface)}
+.calwrap iframe{display:block;width:100%;height:620px;border:0}
+.callink{margin:12px 0 0}
+@media (max-width:640px){.calwrap iframe{height:480px}}
 /* eventi */
 .tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:16px 0 4px}
 .tabs button{font-family:var(--display);font-weight:600;letter-spacing:.04em;font-size:1rem;cursor:pointer;
@@ -369,15 +377,19 @@ footer strong{color:var(--fg)}
     <p class="meta">Venerdì 13 dicembre 2024 · dalle ore 15:30 · Sede Sociale – Via Fonda 15, Pisa</p><div class="results"><h4 class="res-h">Albo d'oro</h4><ol class="podium"><li class="rk rk1"><span class="pos">1º</span><span class="who">Della Rosa Patrizia</span></li><li class="rk rk2"><span class="pos">2º</span><span class="who">Paffi Alessandro</span></li><li class="rk rk3"><span class="pos">3º</span><span class="who">Bassoni Luzio</span></li></ol><h4 class="res-h">Fase finale</h4><div class="phases"><div class="phase"><span class="ph-k">Finale</span><span class="ph-v">Della Rosa Patrizia b. Paffi Alessandro</span></div></div></div>
   </div>
 </article></div>
+    <div class="block-title"><h2>Calendario attività</h2></div>
+    <p class="lead" style="margin-left:0">Appuntamenti, partite e serate del circolo.</p>
+    <div class="calwrap"><iframe title="Calendario del Circolo La Scepre" src="https://calendar.google.com/calendar/embed?src=5dc20a6279a19c34fa37caa02c5fe4364b646527ba69306ee92162257af97a13%40group.calendar.google.com&mode=AGENDA&showTz=0&showPrint=0&showCalendars=0&showTitle=0" loading="lazy"></iframe></div>
+    <p class="callink"><a href="https://calendar.google.com/calendar/embed?src=5dc20a6279a19c34fa37caa02c5fe4364b646527ba69306ee92162257af97a13%40group.calendar.google.com" target="_blank" rel="noopener">Apri il calendario in Google Calendar ↗</a></p>
     <div class="block-title"><h2>Campionati e tornei</h2></div>
     <p class="lead" style="margin-left:0">Le squadre e i campionati di calcio del circolo:</p>
-    <ul class="teamgrid"><li><b>Calcio a 5 (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 5 Over 35 (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 5 “Scarpellini Edilizia” (Futsal)</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 (Girone del Lunedì)</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 (Girone del Mercoledì)</b><small>Classifica e calendario</small></li><li><b>Calcio a 11 “La Scepre”</b><small>Classifica e calendario</small></li><li><b>Calcio a 7 “Pettori 3000”</b><small>Classifica e calendario</small></li></ul>
+    <ul class="teamgrid"><li><b>Calcio a 5 (Futsal)</b><small>Classifica e calendario (lega non più online)</small></li><li><b>Calcio a 5 Over 35 (Futsal)</b><small>Classifica e calendario (lega non più online)</small></li><li><b>Calcio a 5 “Scarpellini Edilizia” (Futsal)</b><small>Classifica e calendario (lega non più online)</small></li><li><b>Calcio a 7 (Girone del Lunedì)</b><small>Classifica e calendario (lega non più online)</small></li><li><b>Calcio a 7 (Girone del Mercoledì)</b><small>Classifica e calendario (lega non più online)</small></li><li><b>Calcio a 11 “La Scepre”</b><small><a href="https://www.badiadicantignano.it/Tic_00_Home.html" target="_blank" rel="noopener">Classifica e calendario ↗</a></small></li><li><b>Calcio a 7 “Pettori 3000”</b><small>Classifica e calendario</small></li></ul>
   </section>
 
   <section class="sec" id="trasparenza" data-sec="trasparenza" hidden>
     <div class="sec-hero"><p class="eyebrow">Trasparenza Amministrativa</p><h1>Documenti e organi sociali</h1></div>
     <div class="block-title"><h2>Documenti amministrazione</h2></div>
-    <ul class="doclist"><li>Atto costitutivo con Statuto (2013)</li><li>Statuto vigente con verbale di approvazione (2022)</li><li>Verbale consiglio direttivo (2021)</li><li>Bilancio 2021</li><li>Verbale di approvazione bilancio 2021</li><li>Bilancio 2022</li><li>Verbale di approvazione bilancio 2022</li></ul>
+    <ul class="doclist"><li><a href="https://drive.google.com/file/d/1ed1_vzFRsGa-7ZEs41g8XrUBaSo1PmW1/view?usp=drive_link" target="_blank" rel="noopener">Atto costitutivo con Statuto vecchio (2013)</a></li><li><a href="https://drive.google.com/file/d/1aX-zXcZiTW6TOfGiZMEaW8qjmVyKBwW2/view?usp=drive_link" target="_blank" rel="noopener">Statuto vigente con verbale di approvazione (2022)</a></li><li><a href="https://drive.google.com/file/d/1IYAGKa_IpgOEK0vSwbs2vYx4sXhqWHzT/view?usp=drive_link" target="_blank" rel="noopener">Verbale consiglio direttivo (2021)</a></li><li><a href="https://drive.google.com/file/d/1bAcngUNgXDsIVq0-rutBQCLEh7_ABIin/view?usp=drive_link" target="_blank" rel="noopener">Bilancio 2021</a></li><li><a href="https://drive.google.com/file/d/19TahCwgggGk7-zq_4tKcGGnydAgY7xta/view?usp=drive_link" target="_blank" rel="noopener">Verbale di approvazione bilancio 2021</a></li><li><a href="https://drive.google.com/file/d/1bAcngUNgXDsIVq0-rutBQCLEh7_ABIin/view?usp=drive_link" target="_blank" rel="noopener">Bilancio 2022</a></li><li><a href="https://drive.google.com/file/d/1ePr9sZ1MwxnOeZGmzKi-nCnkDUVOpHYR/view?usp=drive_link" target="_blank" rel="noopener">Verbale di approvazione bilancio 2022</a></li></ul>
     <div class="block-title"><h2>Consiglio direttivo</h2></div>
     <ul class="council"><li>Marco Vangelisti</li><li>Adriano Cateni</li><li>Alice Vangelisti</li><li>Marco Tognoni</li><li>Erika Tararà</li><li>Nicola Fiori</li><li>Luciana Busceti</li><li>Massimiliano Savelli</li><li>Franco Cocchiarella</li></ul>
   </section>
